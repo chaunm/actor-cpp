@@ -11,9 +11,6 @@
 extern "C" {
 #endif
 #include <stddef.h>
-#ifdef __cplusplus
-}
-#endif
 
 typedef unsigned char 			BYTE;
 typedef unsigned char* 			PBYTE;
@@ -43,4 +40,7 @@ typedef void* 					PVOID;
 #define TRUE					1
 #define FALSE					0
 
+#ifdef __cplusplus
+}
+#endif
 #endif /* TYPESDEF_H_ */

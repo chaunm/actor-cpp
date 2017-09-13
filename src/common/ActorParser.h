@@ -8,6 +8,9 @@
 #ifndef ACTORPARSER_H_
 #define ACTORPARSER_H_
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 #pragma pack(1)
 typedef struct tagZNPACTORHEADER {
@@ -22,4 +25,8 @@ char** 			ActorSplitMessage(char* message);
 void 			ActorFreeSplitMessage(char** splitMessage);
 PACTORHEADER 	ActorParseHeader(char* headerMessage);
 void 			ActorFreeHeaderStruct(PACTORHEADER header);
+
+#ifdef __cplusplus
+}
+#endif
 #endif /* ACTORPARSER_H_ */
